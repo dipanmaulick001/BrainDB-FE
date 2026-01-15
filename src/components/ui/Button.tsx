@@ -17,7 +17,7 @@ const variantStyles  = {
     "secondary" : "bg-purple-300 text-purple-600" 
 }
 
-const defaultStyles = "rounded-md p-4" 
+const defaultStyles = "rounded-md p-4"  //flex is both button on different line
 
 const sizeStyles = {
         "sm" : "p-2",
