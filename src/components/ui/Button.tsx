@@ -1,5 +1,4 @@
 import type { ReactElement } from "react";
-import { PlusIcon } from "../../icons/PlusIcon";
 
 
 type Variants = "primary" | "secondary"
@@ -31,7 +30,7 @@ export const Button = (props : ButtonProps) =>{
 
 
     return <button className={ `${variantStyles[props.variant]} ${defaultStyles} ${sizeStyles[props.size]}
-    ]}`} ><PlusIcon/>{props.text}</button>
+    ]}`} > {props.startIcon? <div>{props.startIcon}</div>:null} {props.text} {props.endIcon}</button>
 
     //return <button className={"bg-purple-300 text-purple-600"}><button/>
 
