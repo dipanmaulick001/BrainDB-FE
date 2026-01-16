@@ -4,6 +4,13 @@ export default {
   theme: {
     extend: {
         colors : {
+
+            gray : {
+              100 : "#989aa2",
+              200 : "#76787e",
+              400 : "#333336",
+
+            },
             purple : {
                 300 : "#e0e7fe",
                 500 : "#3e38a7",
