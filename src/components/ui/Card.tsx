@@ -31,7 +31,7 @@ export const Card = ({title , link , type }: CardProps) =>{
             </div>
 
             <div className="pt-5">
-                { type==="youtube" && <iframe className="w-full" src={link} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>}
+                { type==="youtube" && <iframe className="w-full" src={link.replace("watch","embed")} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>}
             
                 
 

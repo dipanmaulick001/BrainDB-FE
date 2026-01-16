@@ -11,7 +11,7 @@ function App() {
       <Button  startIcon={<PlusIcon size={'md'}/>} variant="secondary" text="Add Content"/>
       
 
-      <Card type='youtube' link="https://youtu.be/oIy5BnW5Qh8?si=XYHxkrlJ316dJJ4Y" title='tech job'/>
+      <Card type='youtube' link="https://www.youtube.com/embed/oIy5BnW5Qh8?si=OKy8xf2pLYhL-bB3" title='tech job'/>
     
     </>
   )
