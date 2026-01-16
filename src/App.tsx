@@ -6,14 +6,16 @@ import { ShareIcon } from './icons/ShareIcon'
 
 function App() {
   return (
-    <>
-      <Button startIcon={<ShareIcon size={"md"}/>} variant="primary" text="Share" />
-      <Button  startIcon={<PlusIcon size={'md'}/>} variant="secondary" text="Add Content"/>
+    <div>
+      <Button size='md' startIcon={<ShareIcon size={"md"}/>} variant="primary" text="Share" />
+      <Button size='md' startIcon={<PlusIcon size={'md'}/>} variant="secondary" text="Add Content"/>
       
-
-      <Card type='youtube' link="https://www.youtube.com/embed/oIy5BnW5Qh8?si=OKy8xf2pLYhL-bB3" title='tech job'/>
+      <div>
+          <Card type='youtube' link="https://www.youtube.com/embed/oIy5BnW5Qh8?si=OKy8xf2pLYhL-bB3" title='tech job'/>
+      </div>
+      
     
-    </>
+    </div>
   )
 }
 

@@ -8,7 +8,7 @@ interface ButtonProps{
     text : string; //what does user want written inside button
     startIcon? :   ReactElement;
     endIcon? : ReactElement;
-    onClick : () => void
+    onClick? : () => void
 }
 
 
