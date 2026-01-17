@@ -6,11 +6,12 @@ import { ShareIcon } from './icons/ShareIcon'
 
 function App() {
   return (
-    <div>
-      <Button size='md' startIcon={<ShareIcon size={"md"}/>} variant="primary" text="Share" />
-      <Button size='md' startIcon={<PlusIcon size={'md'}/>} variant="secondary" text="Add Content"/>
-      
-      <div className='flex'>
+    <div className='p-4'>
+      <div className='flex justify-end gap-4'>
+        <Button size='md' startIcon={<ShareIcon size={"md"}/>} variant="primary" text="Share" />
+        <Button size='md' startIcon={<PlusIcon size={'md'}/>} variant="secondary" text="Add Content"/>
+      </div>
+      <div className='flex gap-3'>
           <Card type='youtube' link="https://www.youtube.com/embed/oIy5BnW5Qh8?si=OKy8xf2pLYhL-bB3" title='tech job'/>
           <Card type='twitter' link="https://x.com/svpino/status/2012239552254284029?s=20" title='aiml course'/>
       </div>
