@@ -7,6 +7,8 @@ interface CardProps{
 }
 
 export const Card = ({title , link , type }: CardProps) =>{
+    console.log("CARD RENDER:", { type, title, link });
+
     return <div>
 
         <div className="p-6 bg-white rounded-lg shadow-md border-slate-200 max-w-71">
@@ -36,19 +38,16 @@ export const Card = ({title , link , type }: CardProps) =>{
                 
 
                 {type === "twitter" && (
-                <iframe
-                    className="w-full"
-                    src={`https://twitframe.com/show?url=${encodeURIComponent(link.split("?")[0])}`}
-                    frameBorder="0"
-                    scrolling="no"
-                />
-                )}
+                    <iframe
+                        className="w-full min-h-112.5"
+                        src={link.split("?")[0].replace("x.com", "fxtwitter.com")}
+                        frameBorder="0"
+                    />
+                    )}
 
 
             </div>
         </div>
-
-
 
     </div>
 }
