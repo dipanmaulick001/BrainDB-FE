@@ -15,7 +15,7 @@ function App() {
       }}/>
       <div className='flex justify-end gap-4'>
         <Button size='md' startIcon={<ShareIcon size={"md"}/>} variant="primary" text="Share" />
-        <Button size='md' startIcon={<PlusIcon size={'md'}/>} variant="secondary" text="Add Content"/>
+        <Button size='md' onClick={()=> setModalOpen(true)} startIcon={<PlusIcon size={'md'}/>} variant="secondary" text="Add"/>
       </div>
       <div className='flex gap-3'>
           <Card type='youtube' link="https://www.youtube.com/embed/oIy5BnW5Qh8?si=OKy8xf2pLYhL-bB3" title='tech job'/>

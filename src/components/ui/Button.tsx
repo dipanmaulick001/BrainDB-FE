@@ -25,14 +25,13 @@ const sizeStyles = {
         "lg" : "p-6"
 }
 
-export const Button = (props : ButtonProps) =>{
+export const Button = (props: ButtonProps) =>{
     //props.variant 
 
 
-    return <button className={ `${variantStyles[props.variant]} ${defaultStyles} ${sizeStyles[props.size]}
-    ]}`} > {props.startIcon? <div>{props.startIcon}</div>:null} {props.text} {props.endIcon}</button>
+    return <button onClick={props.onClick} className={`${variantStyles[props.variant]} ${defaultStyles} ${sizeStyles[props.size]}`} > {props.startIcon? <div>{props.startIcon}</div>:null} {props.text} {props.endIcon}</button>
 
-    //return <button className={"bg-purple-300 text-purple-600"}><button/>
+    //return <button className={"bg-purple-300 text-purple-600"}></button>
 
 }
 
