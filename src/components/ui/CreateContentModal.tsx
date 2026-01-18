@@ -10,7 +10,7 @@ export const CreateContentModal = ({open, onClose})=>{
                         <div className="flex flex-col justify-center">
                                 <span className="bg-white opacity-100 p-5 rounded-md">
                                         <div className="flex justify-end">
-                                                <div onClick={onClose}>
+                                                <div onClick={onClose} className="cursor-pointer">
                                                         <CrossIcon/>
                                                 </div>
                                                 
@@ -21,7 +21,7 @@ export const CreateContentModal = ({open, onClose})=>{
                                                 <Input placeholder={"Link"}/>
                                         </div>
                                         <div className="flex justify-center">
-                                                <Button variant="primary" size="md" text="Add"/>
+                                                <Button variant="primary" size="md" text="Submit"/>
                                         </div>
                                 </span>
                         </div>
