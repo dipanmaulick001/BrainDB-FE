@@ -8,12 +8,12 @@ import { ShareIcon } from './icons/ShareIcon'
 import { Sidebar } from './components/ui/Sidebar'
 
 function App() {
-  const [modalOpen, setModalOpen] = useState(true)
+  const [modalOpen, setModalOpen] = useState(false)
   return (
     <div>
 
       <Sidebar/>
-      <div className='p-4 ml-68 min-h-screen bg-gray-100'>
+      <div className='p-4 ml-64 min-h-screen bg-gray-100'>
           <CreateContentModal open={modalOpen} onClose={() => {
             setModalOpen(false);
           }}/>

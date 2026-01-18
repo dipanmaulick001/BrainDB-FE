@@ -13,7 +13,7 @@ export const CreateContentModal = ({open, onClose})=>{
                                                 <div onClick={onClose} className="cursor-pointer">
                                                         <CrossIcon/>
                                                 </div>
-                                                
+                 
                                         </div>
                                         <div>
                                                 <Input placeholder={"Title"}/>
