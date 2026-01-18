@@ -7,7 +7,7 @@ interface SideBarProps {
 
 export const SidebarItem = ({ text, icon }: SideBarProps) => {
   return (
-    <div className="flex items-center gap-2 cursor-pointer hover:bg-gray-200">
+    <div className="flex items-center gap-2 cursor-pointer hover:bg-gray-200 transition-all duration-1000">
       <div className="pr-2 pl-2">
         {icon}
       </div>
